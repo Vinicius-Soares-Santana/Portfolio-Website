@@ -13,7 +13,7 @@ body {
 #introduction .content {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 2rem 1.5rem;
+    gap: 1rem 1.5rem;
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas:". . ."
                         ". software ."
@@ -21,7 +21,7 @@ body {
                         ". selectAll ."
                         ". . .";
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     justify-items: center;
     align-items: center;
 }
@@ -60,8 +60,18 @@ body {
         55vw 12vh white,
         61vw 12vh white,
         76vw 23vh white,
+        5vw 25vh white,
+        12vw 40vh white,
+        18vw 60vh white,
+        22vw 75vh white,
+        30vw 20vh white,
+        33vw 35vh white,
+        37vw 65vh white,
+        45vw 50vh white,
+        48vw 15vh white,
+        52vw 30vh white,
         78vw 52vh white;
-    filter: drop-shadow(0, 0, 3px rgba(255, 255, 255, 0.35));
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.35));
 }
 
 
@@ -72,8 +82,31 @@ body {
 }
 
 #introduction button{
-    
+    padding:1em;
+    background: rgba(255, 255, 255, 0.01);
+    color: white;
+    border-radius: 10px;
+    width: clamp(220px, 32vw, 420px);
+    font-size: 1.2rem;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.467);
+    transition: all 0.3s ease;
 }
+
+#introduction button:hover {
+    font-size: 1.22em;
+    box-shadow: 0 0 20px rgba(65, 227, 255, 0.607);
+    cursor: pointer;
+}
+
+#introduction button:active {
+    font-size: 1.2em;
+    box-shadow: 0 0 5px rgba(65, 227, 255, 0.607);
+    cursor: pointer;
+}
+
+
+
 
 #introduction .content #software{
     grid-area: software;
@@ -88,3 +121,6 @@ body {
 }
 
 /*---------------------------------------------------------------*/
+
+
+
