@@ -1,0 +1,27 @@
+/*introduction content*/
+#introduction .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(1fr, 5);
+    grid-template-areas:"blank blank blank"
+                        "blank software blank"
+                        "blank design blank"
+                        "blank all blank"
+                        "blank blank blank"
+}
+
+#introduction button{
+    
+}
+
+#introduction .content #software{
+    grid-area: software;
+}
+
+#introduction .content #design{
+    grid-area: design;
+}
+
+#introduction .content #all{
+    grid-area: all;
+}
