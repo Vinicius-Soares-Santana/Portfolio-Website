@@ -122,5 +122,48 @@ body {
 
 /*---------------------------------------------------------------*/
 
+/*-----------------Hides content-----------------------*/
 
+.hidden {
+    display: none;
+}
+
+/*---------------------------------------------------------------*/
+
+/*-----------------intro animations-----------------------*/
+
+@keyframes introFadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform:translateY(-20px);
+    }
+}
+
+@keyframes portfolioIntro {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeOut {
+    animation: introFadeOut 0.8s ease forwards;
+}
+
+.fadeIn {
+    animation: portfolioIntro 0.8s ease forwards;
+}
+
+#portfolio {
+    opacity: 0;
+    transform: translateY(30px);
+}
 
