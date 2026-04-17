@@ -2,12 +2,13 @@
 #introduction .content {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    gap: 2rem 1.5rem;
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:"blank blank blank"
-                        "blank software blank"
-                        "blank design blank"
-                        "blank selectAll blank"
-                        "blank blank blank";
+    grid-template-areas:". . ."
+                        ". software ."
+                        ". design ."
+                        ". selectAll ."
+                        ". . .";
 }
 
 #introduction button{
