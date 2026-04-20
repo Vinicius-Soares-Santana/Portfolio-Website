@@ -13,7 +13,7 @@ const softwareDevSec = document.getElementById("softwaredev");
 const gameDesignSec = document.getElementById("gamedesign");
 const allSec = document.getElementById("allsec");
 
-
+//Main menu animation
 function hideAllSections() {
     navigation.classList.add("hidden");
     softwareDevSec.classList.add("hidden");
@@ -49,3 +49,6 @@ function changeSection(event) {
 buttonSoft.addEventListener("click", changeSection);
 buttonGame.addEventListener("click", changeSection);
 buttonAll.addEventListener("click", changeSection);
+
+//Main menu end ---------------------------------------------
+
