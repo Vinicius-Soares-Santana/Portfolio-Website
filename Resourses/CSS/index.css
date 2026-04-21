@@ -166,4 +166,110 @@ body {
     opacity: 0;
     transform: translateY(30px);
 }
+/*---------------------------------------------------------------*/
 
+/*-----------------------Nav bar--------------------------*/
+
+nav {
+    display: grid;
+    position: relative;
+    background: radial-gradient(ellipse 140% 80% at 50% 110%, #01124b 0%, #0e1938 45%, #000000 100%);
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-areas: ". one two three four five six seven eight .";
+    align-items: center;
+    justify-items: end;
+    font-size: 0.7rem;
+    height: 11vh;
+    min-height: 70px;
+    z-index: 1;
+}
+
+nav a{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.5s ease;
+    z-index: 3;
+}
+
+nav a:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 4px white;
+}
+
+#aboutme {
+    grid-area: six;
+}
+
+#projects {
+    grid-area: seven;
+}
+
+#contact {
+    grid-area: eight;
+}
+
+@media (max-width: 838px) {
+    nav {
+        display: grid;
+        background: radial-gradient(ellipse 140% 80% at 50% 110%, #01124b 0%, #0e1938 45%, #000000 100%);
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-areas: "one two three";
+        align-items: center;
+        justify-items: center;
+    }
+
+    #aboutme {
+        grid-area: one;
+    }
+
+    #projects {
+        grid-area: two;
+    }
+
+    #contact {
+        grid-area: three;
+    }
+
+    nav a {
+        display: block;
+        white-space: nowrap;
+    }
+
+}
+
+nav .stars {
+    z-index: 1;
+}
+
+nav .stars::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left:25%;
+    width: 1px;
+    height: 1px;
+    background: white;
+    border-radius: 50%;
+    box-shadow:
+        1vw 5vh white,
+        3vw 2vh white,
+        8vw 6vh white,
+        14vw 3vh white,
+        19vw 8vh white,
+        26vw 4vh white,
+        33vw 7vh white,
+        39vw 2vh white,
+        44vw 9vh white,
+        51vw 5vh white,
+        58vw 3vh white,
+        64vw 8vh white,
+        71vw 4vh white,
+        77vw 7vh white,
+        89vw 6vh white,
+        95vw 4vh white;
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.35));
+}
+
+/*---------------------------------------------------------------*/
+
+/*---------------------------------------------------------------*/

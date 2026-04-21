@@ -35,6 +35,7 @@ function changeSection(event) {
 
         hideAllSections();
         navigation.classList.remove("hidden");
+        navigation.style.display = "grid";
 
         if (clickedId === "software") {
             softwareDevSec.classList.remove("hidden");
