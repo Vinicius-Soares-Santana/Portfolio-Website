@@ -328,3 +328,56 @@ nav .stars::after {
 
 /*---------------------------SkillCards--------------------------*/
 
+#skillcards {
+    background: #00010c;
+    margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 9fr 1fr;
+        grid-template-rows: 10vh auto;
+        grid-template-areas: ". titleText ."
+                            "cards cards cards";
+        align-items: center;
+}
+
+#skillcards h3 {
+    margin: 0;
+    grid-area: titleText;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#galeryskills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    grid-area: cards;
+}
+
+#galeryskills .image-card {
+    margin: 0;
+    background: linear-gradient(180deg, rgba(14, 14, 77, 0.3) 20%, #00010c 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-bottom: 7vh;
+    transition: 0.5s all ease;
+}
+
+#galeryskills .image-card:hover {
+    background: linear-gradient(180deg, rgba(14, 14, 77, 0.3) 5%, #00010c 100%);
+    transform: scale(1.4);
+    margin-bottom: 7vh;
+    z-index: 4;
+    margin-right: 4vw;
+    margin-left: 4vw;
+}
+
+
+.image-card img {
+    height: 20vh;
+    width: auto;
+    padding: 3vh;
+}
+
+
+
