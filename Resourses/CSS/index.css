@@ -283,8 +283,8 @@ nav .stars::after {
     grid-template-columns: 1fr 1fr 1fr 5fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
     grid-template-areas:
+        "title title title . . . ."
         ". . . . . . ."
-        ". title title title . . ."
         ". . pretitle pretitle pretitle pretitle ."
         ". . text text text text ."
         ". . . . . . .";
@@ -312,12 +312,15 @@ nav .stars::after {
     max-width: 90ch;
 }
 
-#preTitle {
-    grid-area: pretitle;
-}
-
 #mainTitle {
     grid-area: title;
+    text-shadow: 0 0 5px white;
+    font-size: 2vh;
+    padding-left: 1vw;
+}
+
+#preTitle {
+    grid-area: pretitle;
 }
 
 #mainText {
@@ -374,7 +377,7 @@ nav .stars::after {
 
 
 .image-card img {
-    height: 20vh;
+    height: 17vh;
     width: auto;
     padding: 3vh;
 }
