@@ -221,7 +221,7 @@ nav a:hover {
     grid-area: six;
 }
 
-#projects {
+#projectsbutton {
     grid-area: seven;
 }
 
@@ -243,7 +243,7 @@ nav a:hover {
         grid-area: one;
     }
 
-    #projects {
+    #projectsbutton {
         grid-area: two;
     }
 
@@ -404,7 +404,7 @@ nav .stars::after {
 /*---------------------------SkillCards--------------------------*/
 
 #skillcards {
-    background: linear-gradient(180deg, #00010cEE 5%, #00010c22 100%);;
+    background: linear-gradient(180deg, #00010cEE 5%, #00010c22 100%);
     margin: 0;
         display: grid;
         grid-template-columns: 1fr 9fr 1fr;
@@ -456,5 +456,56 @@ nav .stars::after {
     padding: 3vh;
 }
 
+#projects {
+    background: linear-gradient(180deg, #00010cEE 5%, #010a75 100%);
+    margin: 0;
+    color: white;
+    text-shadow: 0 0 3px white;
+}
+
+#projects h1, #projects h2, #projects h3, #projects h4 {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 4vh 3vw;
+    font-size: 1.5rem;
+}
+
+#projects p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
 
 
+#projects #skillsGalery {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 40px;
+    align-items: center;
+}
+
+.project-card {
+    justify-content: center;
+
+    background: linear-gradient(180deg, #00010cEE 20%, #00053c 100%);
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+    padding: 20px;
+
+    transition: 0.5s all ease;
+    box-shadow: 0 0 2px rgba(100, 110, 255, 0.3);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(140, 100, 255, 0.3);
+}
+
+.project-card img {
+    height: 17vh;
+    width: auto;
+    padding: 3vh;
+}
