@@ -208,6 +208,7 @@ nav a{
     border-radius: 10px;
     background: rgba(6, 1, 47, 0.08);
     padding: 0.5% 10%;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -406,14 +407,19 @@ nav .stars::after {
 #skillcards {
     background: linear-gradient(180deg, #00010cEE 5%, #00010c22 100%);
     margin: 0;
-        display: grid;
-        grid-template-columns: 1fr 9fr 1fr;
-        grid-template-rows: 10vh auto;
-        grid-template-areas: ". titleText ."
-                            "cards cards cards";
-        align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-rows: 10vh auto;
+    grid-template-areas: ". titleText ."
+                        "cards cards cards";
+    align-items: center;
 
-        box-shadow: inset 0 -12px 20px -12px rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0 -12px 20px -12px rgba(255, 255, 255, 0.25);
+}
+
+.allCardSection .image-card img,  .gameCardSection .image-card img {
+    height: 13vh;
+    width: auto;
 }
 
 #skillcards h3 {

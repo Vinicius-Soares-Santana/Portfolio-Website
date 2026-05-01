@@ -1,0 +1,220 @@
+html {
+    background-color: #011042;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    background: radial-gradient(circle 50vh at 50% -5%, #10014233 0%, #07002455 50%, #00010cEE 100%);
+    box-shadow: inset 0px -5px 20px -12px rgba(65, 227, 255, 0.22);
+    padding-top: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white
+}
+
+
+/*-----------------------Nav bar--------------------------*/
+
+nav {
+    display: grid;
+    background: radial-gradient(ellipse 140% 80% at 50% 110%, #01124b 0%, #0e1938 45%, #000000 100%);
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-areas: ". one two three four five six seven eight .";
+    align-items: center;
+    justify-items: end;
+    font-size: 0.7rem;
+    height: 11vh;
+    min-height: 70px;
+    z-index: 1;
+    margin: 0;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+    position: fixed;
+    top: 20px;
+    z-index: 9999;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+nav a{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.5s ease;
+    z-index: 3;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.467);
+    border-radius: 10px;
+    background: rgba(6, 1, 47, 0.08);
+    padding: 0.5% 10%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 4px white;
+    box-shadow: 0 0 20px rgba(65, 227, 255, 0.607);
+    scale: 1.02;
+}
+
+#aboutme {
+    grid-area: six;
+}
+
+#projectsbutton {
+    grid-area: seven;
+}
+
+#contact {
+    grid-area: eight;
+}
+
+@media (max-width: 838px) {
+    nav {
+        display: grid;
+        background: radial-gradient(ellipse 140% 80% at 50% 110%, #01124b 0%, #0e1938 45%, #000000 100%);
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-areas: "one two three";
+        align-items: center;
+        justify-items: center;
+    }
+
+    #aboutme {
+        grid-area: one;
+    }
+
+    #projectsbutton {
+        grid-area: two;
+    }
+
+    #contact {
+        grid-area: three;
+    }
+
+    nav a {
+        display: block;
+        white-space: nowrap;
+    }
+
+}
+
+nav .stars {
+    z-index: 1;
+}
+
+nav .stars::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left:25%;
+    width: 1px;
+    height: 1px;
+    background: white;
+    border-radius: 50%;
+    box-shadow:
+        1vw 5vh white,
+        3vw 2vh white,
+        8vw 6vh white,
+        14vw 3vh white,
+        19vw 8vh white,
+        26vw 4vh white,
+        33vw 7vh white,
+        39vw 2vh white,
+        44vw 9vh white,
+        51vw 5vh white,
+        58vw 3vh white,
+        64vw 8vh white,
+        71vw 4vh white,
+        77vw 7vh white,
+        89vw 6vh white,
+        95vw 4vh white;
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.35));
+}
+
+/*---------------------------------------------------------------*/
+
+/*-------------------------Main Section--------------------------*/
+
+
+#information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 7fr 1fr 1fr;
+    grid-template-rows: 1fr auto auto auto auto 1fr;
+    grid-template-areas: "reference reference . . . ."
+                         ". . Title Title Title ."
+                         ". . EmailLogo Email . ."
+                         ". . LinkedinLogo Linkedin . ."
+                         ". . InstagramLogo Instagram . ."
+                         ". . . . . .";
+    row-gap: 2vh;
+
+}
+
+#information img {
+    height: 10vh;
+    width: auto;
+    justify-self: end;
+}
+
+#emailId {
+    grid-area: Email;
+    display: grid;
+    justify-content: start;
+}
+
+#linkedinId {
+    grid-area: Linkedin;
+    display: grid;
+    justify-content: start;
+}
+
+#instagramId {
+    grid-area: Instagram;
+    display: grid;
+    justify-content: start;
+}
+
+#emailLogo {
+    grid-area: EmailLogo;
+}
+
+
+#linkedinLogo {
+    grid-area: LinkedinLogo;
+}
+
+
+#instagramLogo {
+    grid-area: InstagramLogo;
+}
+
+.info-card * {
+    margin: 1vh 3vh;
+}
+
+#Title {
+    grid-area: Title;
+    text-shadow: 0 0 10px white;
+}
+
+#Reference {
+    grid-area: reference;
+    text-shadow: 0 0 5px white;
+    margin-left: 2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+    font-weight:900;
+}
+
