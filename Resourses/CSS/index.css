@@ -515,3 +515,38 @@ nav .stars::after {
     width: auto;
     padding: 3vh;
 }
+
+/* Project catalog */
+#projects #skillsGalery {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    align-items: stretch;
+}
+#projects .project-card h4 {
+    padding: 0;
+    font-size: 1.25rem;
+}
+#projects .project-card p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-shadow: none;
+}
+#projects .project-card .project-status,
+#projects .project-card .project-technologies {
+    color: #b9dcff;
+    font-size: 0.9rem;
+}
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.project-links a {
+    color: #b9f2ff;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+.project-links a:focus-visible {
+    outline: 2px solid #b9f2ff;
+    outline-offset: 4px;
+}
